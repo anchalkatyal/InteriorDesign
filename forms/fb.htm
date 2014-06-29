@@ -1,0 +1,161 @@
+<html>
+<head>
+<style TYPE="text/css">
+
+.tab, .tab td, .tab legend
+{
+font-family: "Comic Sans MS";
+color="white";
+}
+</style>
+
+<script language="javascript">
+function eval()
+{
+if (document.form1.pdname.value=="" || document.form1.con.value=="" || document.form1.pdemail.value=="" || document.form1.pdadd.value==""|| document.form1.sugg.value=="" || document.form1.feed.value=="")
+{
+window.alert("Check the text fields");
+}
+}
+</script>
+
+</head>
+<title>
+Order form
+</title>
+
+
+
+<body bgcolor="#C9FCFF">
+
+<form name="fb"  method="post" action="http://localhost:8181/InteriorDesign/scripts/fed.jsp">
+
+<TABLE WIDTH="75%" ALIGN="center" cellspacing=0 cellpadding=0 class="tab">
+
+<tr>
+
+<td width="25%">
+<font size="2">
+<img src="../img/comforts_logo_.png" height=125>
+</font>
+</td>
+
+<td width="75%">
+<center>
+<img src="../img/comforts_name.png" height=125>
+<br>
+<font size="2">
+ADDRESS ADDRESS ADDRESS ADDRESS ADDRESS ADDRESS ADDRESS ADDRESS
+</font>
+</center>
+</td>
+
+<tr>
+
+<td width="15%" valign="top">
+
+<br> <br>
+
+<table cellspacing=0>
+<tr>
+<td>
+<a href="../index.html">
+Home Page
+</a>
+<tr>
+<td>
+<a href="../aboutUS.htm">
+About us
+</a>
+</td>
+<tr>
+<td>
+<a href="../eg.htm">
+Examples </a>
+</td>
+
+<tr>
+<td>
+<a href="../cataloguehtm">
+Catalogue
+</a>
+</td>
+
+
+
+<tr>
+<td>
+<a href="order.htm">
+Request order
+</a>
+</td>
+
+<tr>
+<td>
+<b>
+Feedback
+</b>
+</td>
+
+<tr>
+<td>
+<a href="login.htm">
+Login
+</a>
+</td>
+</td>
+</table>
+
+</td>
+
+<td width="85%">
+
+<form name="form1" class="tab" enctype="multipart/form-data" method="post" action="mailto:mk_only4u91@rediffmail.com">
+<fieldset>
+<legend>Feedback</legend>
+
+<fieldset>
+<legend>Personal details</legend>
+<br>Name*      :<input type="text" size=50 accesskey="n" name="pdname" value="">
+<br>Contact no.:<input type="text" size=15 name="con" value="">
+<br>Email id   :<input type="text" size=30 name="pdemail" value="">
+<br>Address    :<textarea accesskey="a" name="pdadd" value=""></textarea>
+</fieldset>
+
+<fieldset><legend>Suggestions</legend>
+<textarea accesskey="s" name="sugg" value=""></textarea>
+</fieldset>
+
+
+<fieldset><legend>Feedback</legend>
+<textarea accesskey="f" name="feed" value=""></textarea>
+</fieldset>
+
+<fieldset><legend>Rating</legend>
+<select>
+<option value="r1">1</option>
+<option value="r2">2</option>
+<option value="r3">3</option>
+<option value="r4">4</option>
+<option value="r5">5</option>
+</select>
+</fieldset>
+
+
+<br>
+<input type="submit" value="Submit"
+onClick=eval()>
+<input type="reset" name="Reset">
+
+
+
+
+</fieldset>
+
+
+
+</td>
+
+</table>
+</body>
+</html>
